@@ -39,7 +39,10 @@
 
     <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#hasIngredient -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#hasIngredient"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#hasIngredient">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Ingredient"/>
+    </owl:ObjectProperty>
     
 
 
@@ -48,6 +51,20 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#preparedBy">
         <rdfs:range rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Employee"/>
         <rdfs:label xml:lang="en">prepared by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery/contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery/contains">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Ingredient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Allergen"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#hasIngredient"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery/contains"/>
+        </owl:propertyChainAxiom>
     </owl:ObjectProperty>
     
 
@@ -151,9 +168,17 @@
     
 
 
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery/Allergen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Allergen"/>
+    
+
+
     <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery/Food -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Food"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Food">
+        <rdfs:label rdf:resource="Product"/>
+    </owl:Class>
     
 
 
@@ -251,6 +276,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Butter">
         <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Ingredient"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Milk"/>
         <rdfs:label xml:lang="en">Butter</rdfs:label>
     </owl:NamedIndividual>
     
@@ -478,7 +504,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Milk">
         <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Ingredient"/>
-        <rdfs:label xml:lang="en">Milk</rdfs:label>
+        <contains rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Lactose"/>
+        <rdfs:label xml:lang="en">Cow Milk</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -746,6 +773,23 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Yeast">
         <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Ingredient"/>
         <rdfs:label xml:lang="en">Yeast</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery/Cream -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Cream">
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Milk"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery/Lactose -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Lactose">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Allergen"/>
+        <contains rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Lactose"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 
