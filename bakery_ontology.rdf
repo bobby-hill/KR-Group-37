@@ -1,0 +1,725 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/37/ontologies/2026/11/bakery/"
+     xml:base="http://www.semanticweb.org/37/ontologies/2026/11/bakery/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:bakery="http://www.semanticweb.org/37/ontologies/2026/11/bakery#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#hasFilling -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#hasFilling"/>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#hasFlavour -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#hasFlavour">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Flavour"/>
+        <rdfs:label xml:lang="en">has flavour</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#hasIngredient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#hasIngredient"/>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#preparedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#preparedBy">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Employee"/>
+        <rdfs:label xml:lang="en">prepared by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#Banana_Bread -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Banana_Bread"/>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#Cake -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Cake"/>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#Croissant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Croissant"/>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#Cupcake -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Cupcake"/>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#Employee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Employee"/>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#Filling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Filling"/>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#Flavour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Flavour"/>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#Focaccia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Focaccia"/>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#Ingredient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Ingredient"/>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#Muffin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Muffin"/>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#Pizza_Slice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Pizza_Slice"/>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#Sourdough_Bread -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Sourdough_Bread"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#AlmondCream -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#AlmondCream">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Filling"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#AlmondMeal"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Butter"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Egg"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Sugar"/>
+        <rdfs:label xml:lang="en">Almond cream</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#AlmondCroissant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#AlmondCroissant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Croissant"/>
+        <bakery:hasFilling rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#AlmondCream"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Butter"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Milk"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Salt"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#WheatFlour"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Yeast"/>
+        <bakery:preparedBy rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#NoahReed"/>
+        <rdfs:label xml:lang="en">Almond croissant</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#AlmondMeal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#AlmondMeal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Ingredient"/>
+        <rdfs:label xml:lang="en">Almond meal</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#Banana -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Banana">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Ingredient"/>
+        <rdfs:label xml:lang="en">Banana</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#Blueberry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Blueberry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Ingredient"/>
+        <rdfs:label xml:lang="en">Blueberry</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#BlueberryMuffin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#BlueberryMuffin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Muffin"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Blueberry"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Egg"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Milk"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Sugar"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#WheatFlour"/>
+        <bakery:preparedBy rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#PriyaShah"/>
+        <rdfs:label xml:lang="en">Blueberry muffin</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#Butter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Butter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Ingredient"/>
+        <rdfs:label xml:lang="en">Butter</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#ButterCroissant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#ButterCroissant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Croissant"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Butter"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Milk"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Salt"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#WheatFlour"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Yeast"/>
+        <bakery:preparedBy rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#NoahReed"/>
+        <rdfs:label xml:lang="en">Butter croissant</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#ChocolateChipMuffin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#ChocolateChipMuffin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Muffin"/>
+        <bakery:hasFlavour rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#ChocolateFlavour"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#ChocolateChips"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Egg"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Milk"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Sugar"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#WheatFlour"/>
+        <bakery:preparedBy rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#PriyaShah"/>
+        <rdfs:label xml:lang="en">Chocolate chip muffin</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#ChocolateChips -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#ChocolateChips">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Ingredient"/>
+        <rdfs:label xml:lang="en">Chocolate chips</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#ChocolateCroissant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#ChocolateCroissant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Croissant"/>
+        <bakery:hasFilling rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#ChocolateGanache"/>
+        <bakery:hasFlavour rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#ChocolateFlavour"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Butter"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#ChocolateChips"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Milk"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#WheatFlour"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Yeast"/>
+        <bakery:preparedBy rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#NoahReed"/>
+        <rdfs:label xml:lang="en">Chocolate croissant</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#ChocolateCupcake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#ChocolateCupcake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Cupcake"/>
+        <bakery:hasFilling rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#ChocolateGanache"/>
+        <bakery:hasFlavour rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#ChocolateFlavour"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Butter"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#CocoaPowder"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Egg"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Sugar"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#WheatFlour"/>
+        <bakery:preparedBy rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#PriyaShah"/>
+        <rdfs:label xml:lang="en">Chocolate cupcake</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#ChocolateFlavour -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#ChocolateFlavour">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Flavour"/>
+        <rdfs:label xml:lang="en">Chocolate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#ChocolateGanache -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#ChocolateGanache">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Filling"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Butter"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#ChocolateChips"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Milk"/>
+        <rdfs:label xml:lang="en">Chocolate ganache</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#ChocolateLayerCake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#ChocolateLayerCake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Cake"/>
+        <bakery:hasFilling rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#ChocolateGanache"/>
+        <bakery:hasFlavour rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#ChocolateFlavour"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Butter"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#CocoaPowder"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Egg"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Milk"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Sugar"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#WheatFlour"/>
+        <bakery:preparedBy rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#PriyaShah"/>
+        <rdfs:label xml:lang="en">Chocolate layer cake</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#ClassicBananaBread -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#ClassicBananaBread">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Banana_Bread"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Banana"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Butter"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Egg"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Sugar"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#WheatFlour"/>
+        <bakery:preparedBy rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#MayaLopez"/>
+        <rdfs:label xml:lang="en">Classic banana bread</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#CocoaPowder -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#CocoaPowder">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Ingredient"/>
+        <rdfs:label xml:lang="en">Cocoa powder</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#CountrySourdough -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#CountrySourdough">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Sourdough_Bread"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Salt"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#SourdoughStarter"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#WheatFlour"/>
+        <bakery:preparedBy rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#NoahReed"/>
+        <rdfs:label xml:lang="en">Country sourdough bread</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#Egg -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Egg">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Ingredient"/>
+        <rdfs:label xml:lang="en">Egg</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#Lemon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Lemon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Ingredient"/>
+        <rdfs:label xml:lang="en">Lemon</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#LemonDrizzleCake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#LemonDrizzleCake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Cake"/>
+        <bakery:hasFlavour rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#LemonFlavour"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Butter"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Egg"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Lemon"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Sugar"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#WheatFlour"/>
+        <bakery:preparedBy rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#PriyaShah"/>
+        <rdfs:label xml:lang="en">Lemon drizzle cake</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#LemonFlavour -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#LemonFlavour">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Flavour"/>
+        <rdfs:label xml:lang="en">Lemon</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#MargheritaSlice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#MargheritaSlice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Pizza_Slice"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Mozzarella"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#OliveOil"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Salt"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Tomato"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#WheatFlour"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Yeast"/>
+        <bakery:preparedBy rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#MayaLopez"/>
+        <rdfs:label xml:lang="en">Margherita pizza slice</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#MayaLopez -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#MayaLopez">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Employee"/>
+        <rdfs:label xml:lang="en">John Smith</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#Milk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Milk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Ingredient"/>
+        <rdfs:label xml:lang="en">Milk</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#Mozzarella -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Mozzarella">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Ingredient"/>
+        <rdfs:label xml:lang="en">Mozzarella</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#NoahReed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#NoahReed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Employee"/>
+        <rdfs:label xml:lang="en">Patrick Bateman</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#OliveOil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#OliveOil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Ingredient"/>
+        <rdfs:label xml:lang="en">Olive oil</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#Pepperoni -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Pepperoni">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Ingredient"/>
+        <rdfs:label xml:lang="en">Pepperoni</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#PepperoniSlice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#PepperoniSlice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Pizza_Slice"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Mozzarella"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Pepperoni"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Salt"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Tomato"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#WheatFlour"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Yeast"/>
+        <bakery:preparedBy rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#MayaLopez"/>
+        <rdfs:label xml:lang="en">Pepperoni pizza slice</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#PriyaShah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#PriyaShah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Employee"/>
+        <rdfs:label xml:lang="en">Carl Nowrocky</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#Rosemary -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Rosemary">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Ingredient"/>
+        <rdfs:label xml:lang="en">Rosemary</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#RosemaryFocaccia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#RosemaryFocaccia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Focaccia"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#OliveOil"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Rosemary"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Salt"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#WheatFlour"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Yeast"/>
+        <bakery:preparedBy rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#MayaLopez"/>
+        <rdfs:label xml:lang="en">Rosemary focaccia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#Salt -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Salt">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Ingredient"/>
+        <rdfs:label xml:lang="en">Salt</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#SourdoughStarter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#SourdoughStarter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Ingredient"/>
+        <rdfs:label xml:lang="en">Sourdough starter</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#Sugar -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Sugar">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Ingredient"/>
+        <rdfs:label xml:lang="en">Sugar</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#Tomato -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Tomato">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Ingredient"/>
+        <rdfs:label xml:lang="en">Tomato</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#TomatoFocaccia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#TomatoFocaccia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Focaccia"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#OliveOil"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Salt"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Tomato"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#WheatFlour"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Yeast"/>
+        <bakery:preparedBy rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#MayaLopez"/>
+        <rdfs:label xml:lang="en">Tomato focaccia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#VanillaCelebrationCake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#VanillaCelebrationCake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Cake"/>
+        <bakery:hasFilling rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#VanillaCustard"/>
+        <bakery:hasFlavour rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#VanillaFlavour"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Butter"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Egg"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Milk"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Sugar"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#VanillaExtract"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#WheatFlour"/>
+        <bakery:preparedBy rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#PriyaShah"/>
+        <rdfs:label xml:lang="en">Vanilla celebration cake</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#VanillaCupcake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#VanillaCupcake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Cupcake"/>
+        <bakery:hasFilling rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#VanillaCustard"/>
+        <bakery:hasFlavour rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#VanillaFlavour"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Butter"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Egg"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Milk"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Sugar"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#VanillaExtract"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#WheatFlour"/>
+        <bakery:preparedBy rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#PriyaShah"/>
+        <rdfs:label xml:lang="en">Vanilla cupcake</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#VanillaCustard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#VanillaCustard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Filling"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Egg"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Milk"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Sugar"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#VanillaExtract"/>
+        <rdfs:label xml:lang="en">Vanilla custard</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#VanillaExtract -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#VanillaExtract">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Ingredient"/>
+        <rdfs:label xml:lang="en">Vanilla extract</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#VanillaFlavour -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#VanillaFlavour">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Flavour"/>
+        <rdfs:label xml:lang="en">Vanilla</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#Walnut -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Walnut">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Ingredient"/>
+        <rdfs:label xml:lang="en">Walnut</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#WalnutBananaBread -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#WalnutBananaBread">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Banana_Bread"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Banana"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Egg"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Sugar"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Walnut"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#WheatFlour"/>
+        <bakery:preparedBy rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#MayaLopez"/>
+        <rdfs:label xml:lang="en">Walnut banana bread</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#WheatFlour -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#WheatFlour">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Ingredient"/>
+        <rdfs:label xml:lang="en">Wheat flour</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#WholeWheatFlour -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#WholeWheatFlour">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Ingredient"/>
+        <rdfs:label xml:lang="en">Whole wheat flour</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#WholeWheatSourdough -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#WholeWheatSourdough">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Sourdough_Bread"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Salt"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#SourdoughStarter"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#WholeWheatFlour"/>
+        <bakery:preparedBy rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#NoahReed"/>
+        <rdfs:label xml:lang="en">Whole wheat sourdough bread</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#Yeast -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Yeast">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Ingredient"/>
+        <rdfs:label xml:lang="en">Yeast</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
