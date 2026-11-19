@@ -160,6 +160,22 @@
     
 
 
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery/Animal_based_Ingredients -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Animal_based_Ingredients">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Ingredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery/Dairy_Ingredient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Dairy_Ingredient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Animal_based_Ingredients"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery/Food -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Food">
@@ -180,6 +196,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Lactose">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery/containsLactose"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery/Meat_Ingredient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Meat_Ingredient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Animal_based_Ingredients"/>
     </owl:Class>
     
 
@@ -262,6 +286,37 @@
                         <owl:onProperty rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#hasIngredient"/>
                         <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Sweet_Ingredient"/>
                     </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery/Vegan_Product -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Vegan_Product">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery/Vegetarian_Product -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Vegetarian_Product">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Food"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#hasIngredient"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Meat_Ingredient"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
@@ -742,6 +797,7 @@
     <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#Pepperoni -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Pepperoni">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Meat_Ingredient"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Salty_Ingredient"/>
         <rdfs:label xml:lang="en">Pepperoni</rdfs:label>
     </owl:NamedIndividual>
@@ -985,6 +1041,15 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Almond">
         <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Ingredient"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Nuts"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery/Carrot_Cake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Carrot_Cake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Cake"/>
+        <bakery:hasIngredient rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#WheatFlour"/>
     </owl:NamedIndividual>
     
 
