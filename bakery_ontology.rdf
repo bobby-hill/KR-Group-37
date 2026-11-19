@@ -69,7 +69,7 @@
     <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#Banana_Bread -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Banana_Bread">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Food"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Product_Types"/>
     </owl:Class>
     
 
@@ -77,7 +77,7 @@
     <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#Cake -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Cake">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Food"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Product_Types"/>
     </owl:Class>
     
 
@@ -85,7 +85,7 @@
     <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#Croissant -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Croissant">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Food"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Product_Types"/>
     </owl:Class>
     
 
@@ -93,7 +93,7 @@
     <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#Cupcake -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Cupcake">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Food"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Product_Types"/>
     </owl:Class>
     
 
@@ -119,7 +119,7 @@
     <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#Focaccia -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Focaccia">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Food"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Product_Types"/>
     </owl:Class>
     
 
@@ -133,7 +133,7 @@
     <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#Muffin -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Muffin">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Food"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Product_Types"/>
     </owl:Class>
     
 
@@ -141,7 +141,7 @@
     <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#Pizza_Slice -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Pizza_Slice">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Food"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Product_Types"/>
     </owl:Class>
     
 
@@ -149,7 +149,7 @@
     <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#Sourdough_Bread -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Sourdough_Bread">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Food"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Product_Types"/>
     </owl:Class>
     
 
@@ -192,9 +192,44 @@
     
 
 
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery/Product_Types -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Product_Types">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery/Salty_Ingredient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Salty_Ingredient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Ingredient"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery/Sandwich -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Sandwich">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Product_Types"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery/Savoury_Product -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Savoury_Product">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Food"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#hasIngredient"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Salty_Ingredient"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Food"/>
     </owl:Class>
     
@@ -203,6 +238,33 @@
     <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery/SpecialProduct -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery/SpecialProduct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Product_Types"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery/Sweet_Ingredient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Sweet_Ingredient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Ingredient"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery/Sweet_Product -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Sweet_Product">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Food"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#hasIngredient"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Sweet_Ingredient"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Food"/>
     </owl:Class>
     
@@ -456,6 +518,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#ChocolateChips">
         <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Ingredient"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Sweet_Ingredient"/>
         <rdfs:label xml:lang="en">Chocolate chips</rdfs:label>
     </owl:NamedIndividual>
     
@@ -679,7 +742,7 @@
     <!-- http://www.semanticweb.org/37/ontologies/2026/11/bakery#Pepperoni -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Pepperoni">
-        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery#Ingredient"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/37/ontologies/2026/11/bakery/Salty_Ingredient"/>
         <rdfs:label xml:lang="en">Pepperoni</rdfs:label>
     </owl:NamedIndividual>
     
